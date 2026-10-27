@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" fill="none" role="img" aria-label="DeepSeek blue whale">
+  <defs>
+    <linearGradient id="whaleBody" x1="154" y1="160" x2="486" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BA6FF"/>
+      <stop offset=".28" stop-color="#5B78FF"/>
+      <stop offset=".62" stop-color="#3452EA"/>
+      <stop offset="1" stop-color="#1733B4"/>
+    </linearGradient>
+    <linearGradient id="whaleBelly" x1="250" y1="330" x2="360" y2="402" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E4F7FF"/>
+      <stop offset=".48" stop-color="#A4DDFF"/>
+      <stop offset="1" stop-color="#5FA9FF"/>
+    </linearGradient>
+    <linearGradient id="whaleFin" x1="286" y1="330" x2="338" y2="405" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4D6BFE"/>
+      <stop offset="1" stop-color="#112B9E"/>
+    </linearGradient>
+    <linearGradient id="whaleTail" x1="521" y1="238" x2="625" y2="346" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A87FF"/>
+      <stop offset=".55" stop-color="#3452EA"/>
+      <stop offset="1" stop-color="#132DA7"/>
+    </linearGradient>
+    <linearGradient id="whaleShine" x1="190" y1="164" x2="385" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="bubbleFill" cx="0" cy="0" r="1" gradientTransform="translate(358 126) rotate(54) scale(28)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFF3FF" stop-opacity=".95"/>
+      <stop offset=".55" stop-color="#62D8FF" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#62D8FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="whaleBlur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+    <filter id="whaleShadow" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="26" stdDeviation="24" flood-color="#03132F" flood-opacity=".42"/>
+    </filter>
+  </defs>
+
+  <!-- rising bubbles -->
+  <g opacity=".9">
+    <circle cx="362" cy="122" r="9" stroke="#BFF3FF" stroke-opacity=".55" stroke-width="2"/>
+    <circle cx="388" cy="88" r="14" fill="url(#bubbleFill)" stroke="#BFF3FF" stroke-opacity=".4" stroke-width="1.5"/>
+    <circle cx="365" cy="48" r="7" stroke="#8BEAFF" stroke-opacity=".5" stroke-width="1.5"/>
+    <circle cx="402" cy="42" r="4" stroke="#8BEAFF" stroke-opacity=".35" stroke-width="1.5"/>
+  </g>
+
+  <g filter="url(#whaleShadow)">
+    <!-- tail -->
+    <path d="M515 252C548 226 576 192 607 172C628 158 646 170 637 192C621 227 595 251 587 270C602 285 625 307 637 331C647 352 630 365 609 350C577 328 544 305 514 296Z" fill="url(#whaleTail)"/>
+    <path d="M592 207C605 191 620 178 634 174" stroke="#B7CCFF" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+    <path d="M599 303C611 318 625 334 634 344" stroke="#8FA8FF" stroke-opacity=".28" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- body -->
+    <path d="M102 296C102 254 132 212 178 182C232 147 305 138 372 151C438 164 493 199 526 244C540 263 541 286 526 303C489 346 419 374 339 380C257 387 179 365 135 334C115 320 103 309 102 296Z" fill="url(#whaleBody)"/>
+
+    <!-- top light -->
+    <path d="M171 190C230 154 310 145 384 160C320 158 250 174 204 212C190 223 180 236 174 250C167 232 165 210 171 190Z" fill="url(#whaleShine)" filter="url(#whaleBlur)"/>
+
+    <!-- belly -->
+    <path d="M112 304C140 343 205 369 283 377C367 386 450 361 518 312C505 349 442 381 359 389C263 398 170 361 122 320C116 313 111 308 112 304Z" fill="url(#whaleBelly)" opacity=".96"/>
+    <path d="M139 327C192 359 259 375 330 376C397 377 457 359 497 331" stroke="#E9FAFF" stroke-opacity=".45" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- pectoral fin -->
+    <path d="M286 327C306 333 335 355 344 383C349 399 341 411 328 405C310 396 292 370 278 344C272 334 276 324 286 327Z" fill="url(#whaleFin)"/>
+    <path d="M295 339C307 351 321 371 327 388" stroke="#AFC8FF" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- face -->
+    <path d="M195 252C203 261 214 261 222 252" stroke="#0A1F5C" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="176" cy="280" rx="18" ry="8" fill="#8BEAFF" opacity=".34"/>
+    <path d="M112 307C137 320 164 326 190 321" stroke="#102A72" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+    <path d="M126 310C139 316 151 319 163 320" stroke="#E4F7FF" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+
+    <!-- blowhole -->
+    <path d="M330 159C338 153 348 153 356 159" stroke="#D9F3FF" stroke-width="4" stroke-linecap="round" opacity=".45"/>
+
+    <!-- markings -->
+    <path d="M258 190C270 184 283 182 296 184" stroke="#BFD2FF" stroke-width="4" stroke-linecap="round" opacity=".25"/>
+    <path d="M392 208C404 211 416 217 426 225" stroke="#BFD2FF" stroke-width="4" stroke-linecap="round" opacity=".22"/>
+    <path d="M346 348C366 356 388 359 410 357" stroke="#E4F7FF" stroke-width="3" stroke-linecap="round" opacity=".28"/>
+  </g>
+
+  <!-- little companions -->
+  <g opacity=".8">
+    <path d="M74 209C81 202 90 201 97 206C90 211 82 213 74 209Z" fill="#8BEAFF"/>
+    <path d="M96 206L104 200L101 209L104 217L95 212Z" fill="#8BEAFF" opacity=".8"/>
+    <circle cx="84" cy="206" r="1.5" fill="#06214D"/>
+  </g>
+  <g opacity=".55">
+    <path d="M528 130C534 125 541 124 547 128C541 132 534 134 528 130Z" fill="#BFF3FF"/>
+    <path d="M546 128L553 123L550 130L553 136L545 132Z" fill="#BFF3FF" opacity=".8"/>
+  </g>
+</svg>
