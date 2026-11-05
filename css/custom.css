@@ -386,6 +386,14 @@ body.page-home #banner {
   box-shadow: 0 22px 55px -28px rgba(13, 39, 88, 0.45);
 }
 
+.markdown-body .qwb-figure--compact img {
+  max-width: 520px;
+}
+
+.markdown-body .qwb-figure--portrait img {
+  max-width: 400px;
+}
+
 .markdown-body .qwb-figure figcaption {
   margin-top: 10px;
   color: #7185a6;
