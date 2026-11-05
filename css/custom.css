@@ -73,9 +73,12 @@ body {
 /* ---------- full-screen banner ---------- */
 
 #banner {
-  background-image: url("/img/banner.jpg") !important;
   background-position: center 36% !important;
   background-size: cover !important;
+}
+
+body.page-home #banner {
+  background-image: url("/img/banner.jpg") !important;
 }
 
 #banner .full-bg-img,
@@ -368,6 +371,43 @@ body {
   color: #6c86a8 !important;
 }
 
+/* blog post art */
+
+.markdown-body .qwb-figure {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.markdown-body .qwb-figure img {
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  border-radius: 18px;
+  box-shadow: 0 22px 55px -28px rgba(13, 39, 88, 0.45);
+}
+
+.markdown-body .qwb-figure figcaption {
+  margin-top: 10px;
+  color: #7185a6;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.markdown-body > p > img {
+  border-radius: 18px;
+  box-shadow: 0 22px 55px -28px rgba(13, 39, 88, 0.4);
+}
+
+@media (max-width: 768px) {
+  .markdown-body .qwb-figure {
+    margin: 22px auto;
+  }
+
+  .markdown-body .qwb-figure img {
+    border-radius: 14px;
+  }
+}
+
 .markdown-body figure.highlight .comment,
 .markdown-body figure.highlight .quote {
   color: #6c86a8;
@@ -583,7 +623,7 @@ footer .icon-love {
 /* ---------- mobile ---------- */
 
 @media (max-width: 768px) {
-  #banner {
+  body.page-home #banner {
     background-image: url("/img/banner-mobile.jpg") !important;
     background-position: center 18% !important;
   }
