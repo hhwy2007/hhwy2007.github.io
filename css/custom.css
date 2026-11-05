@@ -633,7 +633,7 @@ footer .icon-love {
 @media (max-width: 768px) {
   body.page-home #banner {
     background-image: url("/img/banner-mobile.jpg") !important;
-    background-position: center 18% !important;
+    background-position: center 5% !important;
   }
 
   #banner .banner-text .h2 {
